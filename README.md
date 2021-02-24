@@ -1,2 +1,2 @@
-# rice
-i3wm rice I use
+# dotfiles
+i3wm dotfiles I use
