@@ -137,12 +137,5 @@ client.urgent           $bg     $bg     $fg  $bg       $bg
 client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background       $bg
 
-
-
-exec_always --no-startup-id i3-msg 'workspace 10; exec st pulsemixer; workspace 1'
+exec_always --no-startup-id i3-msg 'workspace 10; exec pavucontrol; workspace 1'
 exec_always --no-startup-id i3-msg 'workspace 10; exec blueman-manager; workspace 1'
-
-exec_always --no-startup-id /home/sarthak/.config/wpg/wpg_init.sh
-exec_always --no-startup-id autotiling
-exec_always --no-startup-id lxpolkit
-exec_always --no-startup-id xcompmgr 
