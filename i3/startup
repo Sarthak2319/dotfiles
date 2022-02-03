@@ -1,7 +1,0 @@
-#!/bin/bash
-
-(lxqt-policykit-agent &)
-(picom --vsync --sw-opti --experimental-backends --backend glx --xrender-sync-fence --glx-no-rebind-pixmap --glx-no-stencil --corner-radius 12 -i 0.8 --inactive-dim 0.3 --blur-method dual_kawase --blur-strength 7 -m 0.8 --active-opacity 0.7 -Ccb&)
-(deadd-notification-center &)
-(premid &)
-(copyq &)
