@@ -1,0 +1,34 @@
+theme = "semi-native"
+icons = "awesome"
+scrolling = "natural"
+
+[[block]]
+block = "focused_window"
+max_width = 70
+show_marks = "none"
+
+[[block]]
+block = "music"
+buttons = ["play"]
+smart_trim = true
+max_width = 100
+dynamic_width = true
+hide_when_empty	= true
+
+[[block]]
+block = "net"
+format = "{ssid} {signal_strength}"
+interval = 15
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+interval = 30
+format = "{percentage} {time}"
+
+[[block]]
+block = "time"
+interval = 1
+format = "%a %d/%m %r"
