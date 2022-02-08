@@ -1,0 +1,35 @@
+shift + XF86AudioRaiseVolume
+        pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+shift + XF86AudioLowerVolume
+        pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +2%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -2%
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioMicMute
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
+
+Print
+	maim -s | xclip -selection clipboard -t image/png
+
+XF86MonBrightnessDown
+	doas light -U 5
+
+XF86MonBrightnessUp
+	doas light -A 5
